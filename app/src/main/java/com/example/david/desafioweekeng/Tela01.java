@@ -10,5 +10,6 @@ public class Tela01 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tela01);
         //Teste comit
+        //Teste comit2
     }
 }
