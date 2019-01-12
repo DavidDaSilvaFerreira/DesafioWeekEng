@@ -4,7 +4,8 @@
     <string name="confirm">Confirmar</string>
     <string name="city_name_error">Não foi possível localizar a cidade informada!</string>
     <string name="rain">Rain</string>
-    <string name="suggestion">Sugerimeos que você compre:</string>
+    <string name="suggestion">Sugestão</string>
+    <string name="suggestion_buy">Sugerimeos que você compre:</string>
     <string name="pizza">Pizza</string>
-    <string name="iceCream">Sorvete</string>
+    <string name="icecream">Sorvete</string>
 </resources>
