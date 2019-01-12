@@ -1,5 +1,6 @@
 package com.example.david.desafioweekeng;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -26,7 +27,7 @@ public class Tela01 extends AppCompatActivity {
     }
 
     public void clickConfirm(View v){
-        SingletonClima singletonClima = SingletonClima.getInstance();
+        final SingletonClima singletonClima = SingletonClima.getInstance();
         String cityName = ((EditText)findViewById(R.id.cityName)).getText().toString();
         String url = singletonClima.getUrlByCityName(cityName);
 
@@ -36,8 +37,11 @@ public class Tela01 extends AppCompatActivity {
                 try {
                     JSONObject weather = response.getJSONArray("weather").getJSONObject(0);
                     String weatherMain = weather.getString("main");
-                    Toast toast = Toast.makeText(Tela01.this, "certo: "+weatherMain,Toast.LENGTH_SHORT);
+                    singletonClima.setWeather(weatherMain);
+                    Toast toast = Toast.makeText(Tela01.this, "Tempo: "+weatherMain,Toast.LENGTH_SHORT);
                     toast.show();
+                    Intent intent = new Intent(Tela01.this, Tela02.class);
+                    startActivity(intent);
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }
