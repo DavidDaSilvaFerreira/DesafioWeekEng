@@ -29,4 +29,10 @@
         android:onClick="clickConfirm"
         android:text="@string/confirm" />
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="clickByLocalization"
+        android:text="@string/by_localization" />
+
 </LinearLayout>

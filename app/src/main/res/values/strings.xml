@@ -8,4 +8,11 @@
     <string name="suggestion_buy">Sugerimeos que você compre:</string>
     <string name="pizza">Pizza</string>
     <string name="icecream">Sorvete</string>
+    <string name="by_localization">Localização Atual</string>
+    <string name="enable_localization">Habilitar Localização</string>
+    <string name="localization_off">Sua localização está desativada. Por favor habilite a localização para usar essa funcionalidade</string>
+    <string name="localization_setings">Configurações de Localização</string>
+    <string name="cancel">Cancelar</string>
+    <string name="start_serch">Iniciar Busca Pela Localização Atual</string>
+    <string name="weather">Tempo: </string>
 </resources>
